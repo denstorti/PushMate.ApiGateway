@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  pushmate.apigateway:
+    image: ${DOCKER_REGISTRY}pushmateapigateway
+    build:
+      context: .
+      dockerfile: PushMate.ApiGateway/Dockerfile
